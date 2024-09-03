@@ -10,7 +10,7 @@ public class Oppg1a {
 
     List<String> listen = Arrays.asList("10", "1", "20", "110", "21", "12");
     Collections.sort(listen, (x1, x2) -> Integer.valueOf(x1) - Integer.valueOf(x2));
-    System.out.println(listen);
+    System.out.println("Sortert liste av tallverdier: " + listen);
   }
 
 }

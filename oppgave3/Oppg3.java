@@ -24,12 +24,12 @@ public class Oppg3 {
 
 		// b) Finn ut antall kvinner blant de ansatte.
 		long aKvinner = ansatte.stream().filter(ansatt -> ansatt.getKjonn() == Kjonn.KVINNE).count();
-		System.out.println("Antall kvinner blant de ansatte: " + aKvinner);
+		System.out.println("\nAntall kvinner blant de ansatte: " + aKvinner);
 
 		// c) Regn ut gjennomsnittslønnen til kvinnene.
 		double gjLonnKvinner = ansatte.stream().filter(ansatt -> ansatt.getKjonn() == Kjonn.KVINNE)
 				.mapToDouble(Ansatt::getAarslonn).average().orElse(0.00); // Dersom det ikke er kvinner
-		System.out.println("Gjennomsnittslønn for kvinner: " + String.format("%.2f", gjLonnKvinner));
+		System.out.println("\nGjennomsnittslønn for kvinner: " + String.format("%.2f", gjLonnKvinner));
 
 		// d) Gi alle sjefer (stilling inneholder noe med "sjef") en lønnsøkning på 7%
 		// ved å bruke
@@ -45,9 +45,10 @@ public class Oppg3 {
 
 		// e) Finn ut (true|false) om det er noen ansatte som tjener mer enn 800.000,-
 		boolean merEnn = ansatte.stream().anyMatch(ansatt -> ansatt.getAarslonn() > 800000);
-		System.out.println("Tjener noen mer enn 800 000,- : " + merEnn);
+		System.out.println("\nTjener noen mer enn 800 000,- : " + merEnn);
 
 		// f) Skriv ut alle de ansatte med System.out.println() uten å bruke løkke.
+		System.out.println("\nAlle ansatte:");
 		ansatte.forEach(System.out::println);
 
 		// g) Finn den/de ansatte som har lavest lønn.
@@ -55,10 +56,10 @@ public class Oppg3 {
 		// listen
 		// er
 		// tom
-		System.out.println("Ansatte med lavest lønn: " + lavestLonn);
+		System.out.println("\nAnsatte med lavest lønn: " + lavestLonn);
 
 		// h) Finn ut summen av alle heltall i [1, 1000> som er delelig med 3 eller 5.
 		int sumAvTall = java.util.stream.IntStream.range(1, 1000).filter(tall -> tall % 3 == 0 || tall % 5 == 0).sum();
-		System.out.println("Sum heltall [1, 1000> delelig på 3 eller 5: " + sumAvTall);
+		System.out.println("\nSum heltall [1, 1000> delelig på 3 eller 5: " + sumAvTall);
 	}
 }
