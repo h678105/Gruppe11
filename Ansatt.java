@@ -1,4 +1,4 @@
-package oppgave2;
+
 
 public class Ansatt {
 	private String fornavn;

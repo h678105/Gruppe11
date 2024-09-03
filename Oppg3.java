@@ -1,11 +1,7 @@
-package oppgave3;
+
 
 import java.util.Arrays;
 import java.util.stream.Collectors;
-
-import oppgave2.Ansatt;
-import oppgave2.Kjonn;
-
 import java.util.*;
 
 public class Oppg3 {
