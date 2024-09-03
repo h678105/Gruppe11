@@ -1,6 +1,5 @@
 package oppgave3;
 
-
 import java.util.Arrays;
 import java.util.stream.Collectors;
 
@@ -31,7 +30,7 @@ public class Oppg3 {
 		double gjLonnKvinner = ansatte.stream().filter(ansatt -> ansatt.getKjonn() == Kjonn.KVINNE)
 				.mapToDouble(Ansatt::getAarslonn).average().orElse(0.00); // Dersom det ikke er kvinner
 		System.out.println("Gjennomsnittslønn for kvinner: " + String.format("%.2f", gjLonnKvinner));
- 
+
 		// d) Gi alle sjefer (stilling inneholder noe med "sjef") en lønnsøkning på 7%
 		// ved å bruke
 		// streams direkte i stedet for metoden du laget i Oppg2. Skriv ut listen av
@@ -53,9 +52,9 @@ public class Oppg3 {
 
 		// g) Finn den/de ansatte som har lavest lønn.
 		Ansatt lavestLonn = ansatte.stream().min(Comparator.comparingInt(Ansatt::getAarslonn)).orElse(null); // Tilfelle
-																												// listen
-																												// er
-																												// tom
+		// listen
+		// er
+		// tom
 		System.out.println("Ansatte med lavest lønn: " + lavestLonn);
 
 		// h) Finn ut summen av alle heltall i [1, 1000> som er delelig med 3 eller 5.
