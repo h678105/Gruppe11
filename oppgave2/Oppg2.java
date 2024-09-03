@@ -1,3 +1,4 @@
+package oppgave2;
 
 
 import java.util.List;
