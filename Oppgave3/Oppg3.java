@@ -1,10 +1,12 @@
-package Oppgave3;
+package oppgave3;
 
 import java.util.Arrays;
-import java.util.stream.Collectors; 
+import java.util.stream.Collectors;
+
+import oppgave2.Ansatt;
+import oppgave2.Kjonn;
+
 import java.util.*;
-import Oppgave2.Ansatt;
-import Oppgave2.Kjonn;
 
 public class Oppg3 {
 	public static void main(String[] args) {

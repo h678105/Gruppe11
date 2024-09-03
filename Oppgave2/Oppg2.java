@@ -1,4 +1,4 @@
-package Oppgave2;
+package oppgave2;
 
 import java.util.List;
 import java.util.function.Function;
