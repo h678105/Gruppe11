@@ -1,4 +1,4 @@
-package Oppgave2;
+package oppgave2;
 
 import java.util.LinkedList;
 import java.util.Queue;

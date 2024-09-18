@@ -1,4 +1,4 @@
-package Oppgave3;
+package oppgave3;
 
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.ArrayBlockingQueue;

@@ -1,4 +1,4 @@
-package Oppgave3;
+package oppgave3;
 
 public class Kokk extends Thread{
 	private final HamburgerBrett brett;
