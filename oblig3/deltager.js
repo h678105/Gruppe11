@@ -32,8 +32,8 @@ class DeltagerManager {
         //Sjekker om startnummeret allerede finnes
         if(this.deltagere.some(d => d.startnummer === startnummer)){
             startnummerInput.setCustomValidity("Startnummer " + startnummer + " er allerede i bruk!");
-            startnummerInput.reportValidity();
             startnummerInput.focus();
+            startnummerInput.reportValidity();
             return;
         }
 
@@ -41,8 +41,8 @@ class DeltagerManager {
         const validNamePattern = /^\s*\p{L}{2,}((\s+|-)\p{L}{2,})*\s*$/u; //Gyldige tegn
         if(!validNamePattern.test(deltagernavn)) {
             deltagernavnInput.setCustomValidity("Tillate tegn er kun bokstaver, mellomrom og enkel bindestrek mellom delnavn.");
-            deltagernavnInput.reportValidity();
             deltagernavnInput.focus();
+            deltagernavnInput.reportValidity();
             return;
         }
 
@@ -87,8 +87,8 @@ class DeltagerManager {
         if(nedregrense && ovregrense && nedregrense > ovregrense){
             const ovregrenseInput = document.getElementById("ovregrense");
             ovregrenseInput.setCustomValidity("Øvre grense kan ikke være mindre enn nedre grense.");
-            ovregrenseInput.reportValidity();
             ovregrenseInput.focus();
+            ovregrenseInput.reportValidity();
             return;
         }
 
